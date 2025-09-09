@@ -4,3 +4,63 @@ html, body{
   background-color: black;
 }
 
+.status {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+
+.jogos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.jogo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.square {
+  display: flex;                   
+  justify-content: center;        
+  align-items: center;             
+  width: 100px;                    
+  height: 100px;                  
+  font-size: 24px;                 
+  background-color: rgb(255, 255, 255);     
+  border: 2px solid #333;          
+  cursor: pointer;                
+  max-width: 100px;                
+  max-height: 100px;               
+  text-align: center;             
+  margin: 5px;                     
+  border-radius: 5px;
+  transition: all 0.3s ease;         
+}
+.square:hover {
+  box-shadow: 0 0 15px 5px rgba(255, 255, 255, 0.7);  /* Borda brilhante */
+  border-color: rgba(255, 255, 255, 0.7);  /* Cor da borda também brilha */
+}
+
+.historico {
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;  /* Centraliza os itens na horizontal */
+  align-items: center;      /* Centraliza os itens na vertical */
+  margin-left: 0;           /* Isso deve ser redundante se você não tiver outro margem aplicando */
+}
+
+.game-info button {
+  margin: 0 10px;           /* Espaço entre os botões */
+}
+
+.game-info button{
+  cursor: pointer;
+
+}
